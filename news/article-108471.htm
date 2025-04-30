@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://nodev2rayclash.github.io/news/article-108471.htm" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>完整指南：如何有效查看和监控 V2Ray 的运行状态</title>
+        <meta name="description" content="在现代网络安全和隐私保护的背景下，V2Ray 作为一款功能强大的网络代理工具，广泛应用于“科学上网”以及绕过网络审查的场景。V2Ray 支持多种代理协议（如 VMess、vLess、Shadowsoc" />
+        <link rel="icon" href="/assets/website/img/clashxmeta/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="Clash免费节点 订阅教程网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://nodev2rayclash.github.io/news/article-108471.htm" />
+    <meta property="og:site_name" content="Clash免费节点 订阅教程网" />
+    <meta property="og:title" content="完整指南：如何有效查看和监控 V2Ray 的运行状态" />
+    <meta property="og:image" content="https://nodev2rayclash.github.io/uploads/20241102-1/8a0accc52d180d0728cabfbcf349b4c0.webp" />
+        <meta property="og:release_date" content="2025-04-30T19:23:01" />
+    <meta property="og:updated_time" content="2025-04-30T19:23:01" />
+        <meta property="og:description" content="在现代网络安全和隐私保护的背景下，V2Ray 作为一款功能强大的网络代理工具，广泛应用于“科学上网”以及绕过网络审查的场景。V2Ray 支持多种代理协议（如 VMess、vLess、Shadowsoc" />
+        
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="/assets/website/css/clashxmeta/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/clashxmeta/animate.min.css">
+    <link href="/assets/website/css/clashxmeta/pace-theme-loading-bar.css" rel="stylesheet">
+    <link href="/assets/website/css/clashxmeta/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/clashxmeta/YouTubePopUp.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxmeta/styles.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="完整指南：如何有效查看和监控 V2Ray 的运行状态">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZLNMQFZKK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MZLNMQFZKK');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <div id="preloader">
+        <div class="loadingio-spinner-ripple-n04314c8ef9">
+            <div class="ldio-r67ztvwtjg">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="back-to-top" class="d-flex align-items-center justify-content-center display-6">☝️</div>
+    <div class="bg-gradient-to-top">
+                <!-- ::::::::::: NAVBAR :::::::::::::::-->
+        <div class="fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light pt-4">
+                    <div class="container-fluid p-0">
+                        <a class="navbar-brand" href="/">
+                                                        <span>Clash免费节点</span>
+                                                    </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto mx-auto">
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/">首页</a>
+                                </li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                                </li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/news/">新闻资讯</a>
+                                </li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/client.htm">客户端</a>
+                                </li>
+                                                            </ul>
+                            
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ::::::::::: /END NAVBAR ::::::::::-->
+        <!-- ::::::::::: INTRODUCTION :::::::::::::::-->
+        <div id="blog-hero">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-8 offset-sm-2">
+                        <h1 class="display-6 font-weight-medium pb-3 text-center">完整指南：如何有效查看和监控 V2Ray 的运行状态</h1>
+                        <p class="accent-text-color pb-3 text-center font-size-14">
+                            <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / <span>正文</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ::::::::::: /END INTRODUCTION ::::::::::-->
+    </div>
+    <!-- ::::::::::::::: ABOUT US ::::::::::::::::::::::::-->
+    <div class="container wow animate__fadeInUp pt-5" id="about">
+        <div class="row">
+            <div class="col-md-9">
+                                <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="30" data-end="213" class="">在现代网络安全和隐私保护的背景下，V2Ray 作为一款功能强大的网络代理工具，广泛应用于“科学上网”以及绕过网络审查的场景。V2Ray 支持多种代理协议（如 VMess、vLess、Shadowsocks 等），并能通过负载均衡和动态区块检测等功能提升网络连接的稳定性和安全性。然而，了解 V2Ray 的运行状态对于确保网络连接的顺畅以及快速定位和解决问题至关重要。</p>
+<p data-start="215" data-end="338" class="">本文将深入探讨如何查看和监控 V2Ray 的运行状态，详细介绍在不同平台上查看 V2Ray 状态的方法，包括命令行工具、图形界面工具、第三方监控工具等，并解答在使用 V2Ray 过程中常见的疑问与问题，帮助读者全面掌握 V2Ray 状态查看技巧。</p>
+<h2 data-start="340" data-end="355" class="">一、什么是 V2Ray？</h2>
+<p data-start="357" data-end="487" class="">V2Ray 是一个开源的网络代理工具，旨在提升网络连接的安全性、稳定性和匿名性。V2Ray 支持多种协议，包括 VMess、vLess、Shadowsocks 等，这使得它在科学上网、访问被屏蔽的网站以及保护用户隐私等方面表现出色。V2Ray 的核心功能包括：</p>
+<ul data-start="489" data-end="664">
+<li data-start="489" data-end="566" class="">
+<p data-start="491" data-end="566" class=""><strong data-start="491" data-end="500">多协议支持</strong>：除了传统的 SOCKS5 和 HTTP 代理，V2Ray 还支持 VMess、vLess 和 Shadowsocks 等多种协议。</p>
+</li>
+<li data-start="567" data-end="619" class="">
+<p data-start="569" data-end="619" class=""><strong data-start="569" data-end="579">动态区块检测</strong>：V2Ray 可以动态检测不同网络环境下的区块，调整代理规则，从而提升用户体验。</p>
+</li>
+<li data-start="620" data-end="661" class="">
+<p data-start="622" data-end="661" class=""><strong data-start="622" data-end="630">负载均衡</strong>：支持多节点的流量转发和负载均衡，确保网络连接的稳定性和速度。</p>
+</li>
+</ul>
+<p data-start="665" data-end="716" class="">了解 V2Ray 的状态，尤其是在出现连接问题时，可以帮助用户快速排查并解决问题，确保稳定的网络连接。</p>
+<h2 data-start="718" data-end="738" class="">二、如何查看 V2Ray 的状态？</h2>
+<p data-start="740" data-end="801" class="">V2Ray 的运行状态可以通过多种方式进行查看和监控，具体方式根据不同的操作系统和平台有所不同。以下是针对不同平台的方法。</p>
+<h3 data-start="803" data-end="831" class="">2.1 在 Linux 上查看 V2Ray 状态</h3>
+<p data-start="833" data-end="879" class="">对于 Linux 用户，可以通过命令行工具查看 V2Ray 的状态。以下是常见的命令行指令：</p>
+<h4 data-start="881" data-end="916" class="">1.1 使用 <code data-start="893" data-end="904">systemctl</code> 查看 V2Ray 状态</h4>
+<p data-start="918" data-end="976" class="">在 Linux 系统中，可以使用 <code data-start="935" data-end="946">systemctl</code> 命令查看 V2Ray 服务的状态。打开终端并输入以下命令：</p>
+<pre class="overflow-visible!" data-start="978" data-end="1012"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>systemctl status v2ray
+</span></span></code></div></div></pre>
+<p data-start="1014" data-end="1071" class="">此命令将显示 V2Ray 服务的当前状态，包括是否正常运行。如果 V2Ray 服务未启动，可以通过以下命令启动它：</p>
+<pre class="overflow-visible!" data-start="1073" data-end="1106"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>systemctl start v2ray
+</span></span></code></div></div></pre>
+<h4 data-start="1108" data-end="1143" class="">1.2 使用 <code data-start="1120" data-end="1132">journalctl</code> 获取更详细的日志信息</h4>
+<p data-start="1145" data-end="1203" class="">为了查看更详细的 V2Ray 日志，可以使用 <code data-start="1168" data-end="1180">journalctl</code> 命令。这对于排查启动问题或故障排除非常有用：</p>
+<pre class="overflow-visible!" data-start="1205" data-end="1236"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>journalctl -u v2ray
+</span></span></code></div></div></pre>
+<p data-start="1238" data-end="1276" class="">该命令将显示 V2Ray 的日志，帮助用户诊断可能存在的网络问题或配置错误。</p>
+<h3 data-start="1278" data-end="1306" class="">2.2 在 macOS 上查看 V2Ray 状态</h3>
+<p data-start="1308" data-end="1376" class="">在 macOS 系统中，用户可以通过终端查看 V2Ray 的运行状态。假如你使用 Homebrew 安装 V2Ray，可以使用以下命令：</p>
+<pre class="overflow-visible!" data-start="1378" data-end="1421"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>brew services list | grep v2ray
+</span></span></code></div></div></pre>
+<p data-start="1423" data-end="1510" class="">此命令会列出当前所有的服务，并过滤出包含 V2Ray 的信息。如果 V2Ray 正在运行，你将看到类似于 “v2ray started” 的输出，表示服务已经启动并正常运行。</p>
+<h3 data-start="1512" data-end="1542" class="">2.3 在 Windows 上查看 V2Ray 状态</h3>
+<p data-start="1544" data-end="1577" class="">对于 Windows 用户，查看 V2Ray 状态的方法相对简单：</p>
+<h4 data-start="1579" data-end="1595" class="">1.1 使用任务管理器</h4>
+<p data-start="1597" data-end="1707" class="">你可以通过任务管理器查看 V2Ray 进程是否在运行。右击任务栏，选择 <strong data-start="1633" data-end="1642">任务管理器</strong>，然后在 <strong data-start="1647" data-end="1653">进程</strong> 选项卡中查找 <code data-start="1661" data-end="1668">v2ray</code> 进程。如果 V2Ray 正在运行，进程列表中会显示 V2Ray 相关的信息。</p>
+<h4 data-start="1709" data-end="1730" class="">1.2 使用图形界面工具查看状态</h4>
+<p data-start="1732" data-end="1832" class="">如果你使用 V2RayN 或 V2RayGui 这样的图形界面工具，状态栏通常会直接显示 V2Ray 的连接状态和流量情况。在这些工具的主界面上，你可以轻松查看当前的代理状态，以及当前配置是否为最新。</p>
+<h3 data-start="1834" data-end="1861" class="">2.4 使用图形界面工具查看 V2Ray 状态</h3>
+<p data-start="1863" data-end="1940" class="">V2RayN 和 V2RayGui 是两款广泛使用的 V2Ray 图形界面工具。它们为用户提供了简洁直观的操作界面，帮助用户方便地监控 V2Ray 状态。</p>
+<h4 data-start="1942" data-end="1957" class="">1.1 V2RayN</h4>
+<p data-start="1959" data-end="2069" class="">V2RayN 是 Windows 平台上一款流行的图形界面工具，它提供了非常友好的用户界面，用户可以轻松查看代理服务器的状态、流量以及连接速度。打开 V2RayN 后，状态栏会直接显示当前的连接状态、连接节点和流量情况。</p>
+<h4 data-start="2071" data-end="2088" class="">1.2 V2RayGui</h4>
+<p data-start="2090" data-end="2197" class="">V2RayGui 是另一个适用于 Windows 和 macOS 的图形界面工具，它提供了与 V2Ray 相关的基本配置、流量监控等功能。通过 V2RayGui，用户可以查看代理规则、连接状态，并能够进行实时调试。</p>
+<h2 data-start="2199" data-end="2218" class="">三、V2Ray 状态常见问题解答</h2>
+<p data-start="2220" data-end="2265" class="">在查看和监控 V2Ray 状态时，可能会遇到一些常见问题。以下是几种常见问题及其解决方法：</p>
+<h3 data-start="2267" data-end="2295" class="">3.1 V2Ray 状态正常，但无法连接互联网？</h3>
+<p data-start="2297" data-end="2336" class="">如果 V2Ray 状态显示正常，但仍然无法访问互联网，可能是由于以下几个原因：</p>
+<ul data-start="2338" data-end="2471">
+<li data-start="2338" data-end="2386" class="">
+<p data-start="2340" data-end="2386" class=""><strong data-start="2340" data-end="2348">配置错误</strong>：检查 V2Ray 配置文件中的服务器地址、端口、UUID 等参数是否正确。</p>
+</li>
+<li data-start="2387" data-end="2423" class="">
+<p data-start="2389" data-end="2423" class=""><strong data-start="2389" data-end="2397">网络问题</strong>：确保服务器端的网络连接正常，或者尝试更换代理节点。</p>
+</li>
+<li data-start="2424" data-end="2471" class="">
+<p data-start="2426" data-end="2471" class=""><strong data-start="2426" data-end="2435">防火墙问题</strong>：有些网络环境会限制代理工具的使用，可以尝试关闭防火墙或修改防火墙规则。</p>
+</li>
+</ul>
+<h3 data-start="2473" data-end="2498" class="">3.2 如何停止或重启 V2Ray 服务？</h3>
+<p data-start="2500" data-end="2540" class="">如果你需要停止或重启 V2Ray 服务，可以在 Linux 系统中使用以下命令：</p>
+<ul data-start="2542" data-end="2553">
+<li data-start="2542" data-end="2553" class="">
+<p data-start="2544" data-end="2553" class=""><strong data-start="2544" data-end="2552">停止服务</strong>：</p>
+</li>
+</ul>
+<pre class="overflow-visible!" data-start="2555" data-end="2587"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>systemctl stop v2ray
+</span></span></code></div></div></pre>
+<ul data-start="2589" data-end="2600">
+<li data-start="2589" data-end="2600" class="">
+<p data-start="2591" data-end="2600" class=""><strong data-start="2591" data-end="2599">重启服务</strong>：</p>
+</li>
+</ul>
+<pre class="overflow-visible!" data-start="2602" data-end="2637"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>systemctl restart v2ray
+</span></span></code></div></div></pre>
+<p data-start="2639" data-end="2694" class="">在 Windows 系统中，使用 V2RayN 或 V2RayGui 等工具可以通过一键按钮来停止或重启服务。</p>
+<h3 data-start="2696" data-end="2717" class="">3.3 添加日志监控会影响速度吗？</h3>
+<p data-start="2719" data-end="2802" class="">一般来说，启用日志监控对 V2Ray 的性能影响是微乎其微的。然而，如果你对速度非常敏感，建议在测试时关闭日志监控，或者使用 A/B 测试方法对比有无日志的网络表现。</p>
+<h3 data-start="2804" data-end="2826" class="">3.4 如何判断服务器配置是否正确？</h3>
+<p data-start="2828" data-end="2917" class="">如果你怀疑 V2Ray 配置有误，可以使用一些主流的 IP 检测工具来验证连接是否正常。如果发现连接的 IP 段存在大量无法连接的情况，可能是 DNS 配置错误或服务器设置问题。</p>
+<h2 data-start="2919" data-end="2926" class="">四、结论</h2>
+<p data-start="2928" data-end="3073" class="">了解如何查看和监控 V2Ray 的状态是确保网络代理顺畅运行的关键。无论是在 Linux、macOS 还是 Windows 平台，使用合适的工具和命令可以帮助用户快速诊断问题，并确保 V2Ray 的高效运行。通过本文介绍的方法，你应该能够轻松查看 V2Ray 的状态，并解决常见的配置问题。</p>
+<hr data-start="3075" data-end="3078" class="">
+<h2 data-start="3080" data-end="3096" class="">点评：语言与内容的精彩结合</h2>
+<p data-start="3098" data-end="3234" class="">本文深入浅出地解释了如何查看 V2Ray 状态的方法，内容结构清晰、条理分明，涵盖了 Linux、macOS、Windows 等多平台的使用技巧。同时，针对常见问题的解答让读者能够轻松排查常见的配置和网络问题。文章语言简洁流畅，技术性强，但又不失易懂性，适合各类用户阅读。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-108470.htm">如何安全借用Shadowrocket账号：保障隐私与安全的全面指南</a></p>
+                                    </div>
+                            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-108470.htm" title="如何安全借用Shadowrocket账号：保障隐私与安全的全面指南">如何安全借用Shadowrocket账号：保障隐私与安全的全面指南</a></li>
+                        <li class="py-2"><a href="/news/article-108471.htm" title="完整指南：如何有效查看和监控 V2Ray 的运行状态">完整指南：如何有效查看和监控 V2Ray 的运行状态</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ::::::::::::::: /END ABOUT US :::::::::::::::::::-->
+        <!-- ::::::::::::::: FOOTER ::::::::::::::::::::-->
+    <div id="footer" class="pt-lg-5 pt-0 mt-0 mt-lg-5 text-center text-lg-start">
+        <div class="container">
+            <hr class="hr">
+            <div class="row gy-4 gy-lg-0 pb-5 pb-lg-4">
+                <div class="col-sm-4 font-size-14 accent-text-color text-center text-lg-start">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <a href="/">Clash免费节点 订阅教程网</a> 版权所有 Powered by WordPress
+                </div>
+                <div class="col-sm-4 text-center">
+                    <ul class="list-unstyled font-size-14 list-inline mb-0">
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#">Terms</a></li>
+                        <li class="list-inline-item accent-text-color">·</li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 text-lg-end text-center">
+                    <ul class="list-unstyled font-size-14 list-inline mb-0">
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="facebook" class="icon-24"></i></a></li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="twitter" class="icon-24"></i></a></li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="instagram" class="icon-24"></i></a></li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="slack" class="icon-24"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ::::::::::::::: /END FOOTER :::::::::::::::-->
+    <script src="/assets/website/js/frontend/clashxmeta/jquery-1.12.4.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/pace.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/wow.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/feather.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
