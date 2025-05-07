@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://nodev2rayclash.github.io/news/article-111675.htm" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何在V2Ray中导入Vmess节点：一步步详解与常见问题解决</title>
+        <meta name="description" content="在当今的互联网环境中，越来越多的用户开始关注网络隐私与安全，尤其是在信息安全成为全球焦点的背景下，科学上网工具如V2Ray的需求不断增加。作为一种高效且灵活的网络代理工具，V2Ray广泛应用于绕过地理" />
+        <link rel="icon" href="/assets/website/img/clashxmeta/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="Clash免费节点 订阅教程网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://nodev2rayclash.github.io/news/article-111675.htm" />
+    <meta property="og:site_name" content="Clash免费节点 订阅教程网" />
+    <meta property="og:title" content="如何在V2Ray中导入Vmess节点：一步步详解与常见问题解决" />
+    <meta property="og:image" content="https://nodev2rayclash.github.io/uploads/20241102-1/a13722888a549635b3dcc53887b19da3.webp" />
+        <meta property="og:release_date" content="2025-05-04T09:29:19" />
+    <meta property="og:updated_time" content="2025-05-04T09:29:19" />
+        <meta property="og:description" content="在当今的互联网环境中，越来越多的用户开始关注网络隐私与安全，尤其是在信息安全成为全球焦点的背景下，科学上网工具如V2Ray的需求不断增加。作为一种高效且灵活的网络代理工具，V2Ray广泛应用于绕过地理" />
+        
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="/assets/website/css/clashxmeta/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/clashxmeta/animate.min.css">
+    <link href="/assets/website/css/clashxmeta/pace-theme-loading-bar.css" rel="stylesheet">
+    <link href="/assets/website/css/clashxmeta/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/clashxmeta/YouTubePopUp.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxmeta/styles.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="如何在V2Ray中导入Vmess节点：一步步详解与常见问题解决">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZLNMQFZKK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MZLNMQFZKK');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <div id="preloader">
+        <div class="loadingio-spinner-ripple-n04314c8ef9">
+            <div class="ldio-r67ztvwtjg">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="back-to-top" class="d-flex align-items-center justify-content-center display-6">☝️</div>
+    <div class="bg-gradient-to-top">
+                <!-- ::::::::::: NAVBAR :::::::::::::::-->
+        <div class="fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light pt-4">
+                    <div class="container-fluid p-0">
+                        <a class="navbar-brand" href="/">
+                                                        <span>Clash免费节点</span>
+                                                    </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto mx-auto">
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/">首页</a>
+                                </li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                                </li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/news/">新闻资讯</a>
+                                </li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/client.htm">客户端</a>
+                                </li>
+                                                            </ul>
+                            
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ::::::::::: /END NAVBAR ::::::::::-->
+        <!-- ::::::::::: INTRODUCTION :::::::::::::::-->
+        <div id="blog-hero">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-8 offset-sm-2">
+                        <h1 class="display-6 font-weight-medium pb-3 text-center">如何在V2Ray中导入Vmess节点：一步步详解与常见问题解决</h1>
+                        <p class="accent-text-color pb-3 text-center font-size-14">
+                            <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / <span>正文</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ::::::::::: /END INTRODUCTION ::::::::::-->
+    </div>
+    <!-- ::::::::::::::: ABOUT US ::::::::::::::::::::::::-->
+    <div class="container wow animate__fadeInUp pt-5" id="about">
+        <div class="row">
+            <div class="col-md-9">
+                                <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="35" data-end="201" class="">在当今的互联网环境中，越来越多的用户开始关注网络隐私与安全，尤其是在信息安全成为全球焦点的背景下，科学上网工具如V2Ray的需求不断增加。作为一种高效且灵活的网络代理工具，V2Ray广泛应用于绕过地理限制、提升网络安全性、保护隐私等场景。而在V2Ray的多种协议中，Vmess协议因其独特的优势和灵活的配置方式，成为许多用户的首选。</p>
+<p data-start="203" data-end="318" class="">但对于很多初学者来说，如何在V2Ray中成功导入Vmess节点，尤其是确保节点连接稳定、速度快速，可能是一个不小的挑战。本文将详细为您介绍如何在V2Ray中导入Vmess节点，帮助您解决常见的问题，并通过具体步骤为您提供操作指导。</p>
+<h2 data-start="320" data-end="334" class="">什么是Vmess协议？</h2>
+<p data-start="336" data-end="459" class="">Vmess协议是V2Ray的核心协议之一，它被专门设计用来提供加密的网络连接，确保用户的数据传输更加安全，并有效避免了网络监控和信息泄漏。Vmess协议的设计灵活，支持多种不同的传输方式和多用户配置，因此它成为了V2Ray用户中最常用的协议之一。</p>
+<p data-start="461" data-end="528" class="">与传统的代理协议相比，Vmess协议具有更高的隐私保护能力和更强的抗干扰性，这也使得它在突破网络封锁和防止数据泄露方面表现得尤为出色。</p>
+<h2 data-start="530" data-end="542" class="">获取Vmess节点</h2>
+<p data-start="544" data-end="595" class="">在导入Vmess节点之前，首先您需要获得一个可用的Vmess节点。以下是几种获取Vmess节点的方法：</p>
+<h3 data-start="597" data-end="610" class="">1. 向服务商购买</h3>
+<p data-start="612" data-end="722" class="">许多网络服务提供商会直接出售Vmess节点。用户通过购买VPS（虚拟专用服务器）等服务，能够获取Vmess节点的地址、端口、UUID（唯一用户标识符）等信息。购买时要确保选择信誉较好的服务商，以确保节点的稳定性和安全性。</p>
+<h3 data-start="724" data-end="738" class="">2. 在技术社区获取</h3>
+<p data-start="740" data-end="823" class="">一些技术社区、论坛或社交平台上，经常会有用户分享可用的Vmess节点。使用这些节点时，用户需要特别注意验证节点的有效性及其安全性，避免使用不合法或恶意节点带来的风险。</p>
+<h3 data-start="825" data-end="841" class="">3. 自建Vmess节点</h3>
+<p data-start="843" data-end="952" class="">如果您有足够的技术能力，也可以选择自行搭建V2Ray服务器，获得自己的Vmess节点。通过购买VPS并配置V2Ray服务，您可以完全控制节点的性能和安全性。这种方式虽然更为复杂，但它可以为用户提供更高的自由度和灵活性。</p>
+<h2 data-start="954" data-end="969" class="">导入Vmess节点的步骤</h2>
+<h3 data-start="971" data-end="993" class="">步骤 1：下载并安装V2Ray客户端</h3>
+<p data-start="995" data-end="1036" class="">在开始导入Vmess节点之前，您需要先安装V2Ray客户端。以下是安装的基本步骤：</p>
+<ol data-start="1038" data-end="1359">
+<li data-start="1038" data-end="1151" class="" style="">
+<p data-start="1041" data-end="1151" class=""><strong data-start="1041" data-end="1054">访问V2Ray官网</strong>：首先，访问V2Ray的官方网站（<a data-start="1071" data-end="1151" rel="noopener" class="" target="_new">https://www.v2ray.com/）以下载适合您操作系统的V2Ray客户端。V2Ray支持多种操作系统，包括Windows、MacOS、Linux等。</a></p>
+</li>
+<li data-start="1156" data-end="1244" class="" style="">
+<p data-start="1159" data-end="1244" class=""><strong data-start="1159" data-end="1170">选择合适的版本</strong>：根据您的操作系统版本，选择相应的安装包下载。对于MacOS用户，您可以下载V2RayU客户端，对于Windows用户，可以选择V2RayN客户端。</p>
+</li>
+<li data-start="1246" data-end="1296" class="" style="">
+<p data-start="1249" data-end="1296" class=""><strong data-start="1249" data-end="1258">安装客户端</strong>：下载完成后，解压并按照系统提示完成安装。安装路径可根据自己的需要进行选择。</p>
+</li>
+<li data-start="1298" data-end="1359" class="" style="">
+<p data-start="1301" data-end="1359" class=""><strong data-start="1301" data-end="1315">配置V2Ray客户端</strong>：V2Ray的配置文件是一个JSON格式的文件，您需要根据自己的网络环境配置服务器信息。</p>
+</li>
+</ol>
+<h3 data-start="1361" data-end="1380" class="">步骤 2：打开V2Ray客户端</h3>
+<p data-start="1382" data-end="1430" class="">安装完成后，打开V2Ray客户端。客户端的具体界面可能因操作系统不同而有所差异，但大致流程相同。</p>
+<ol data-start="1432" data-end="1543">
+<li data-start="1432" data-end="1491" class="" style="">
+<p data-start="1435" data-end="1491" class=""><strong data-start="1435" data-end="1444">启动客户端</strong>：找到已安装的V2Ray客户端，点击启动。在客户端界面，您会看到“配置”或“节点管理”的选项。</p>
+</li>
+<li data-start="1493" data-end="1543" class="" style="">
+<p data-start="1496" data-end="1543" class=""><strong data-start="1496" data-end="1506">进入配置页面</strong>：在客户端主界面，找到并点击“配置”或“节点管理”，您将进入节点配置页面。</p>
+</li>
+</ol>
+<h3 data-start="1545" data-end="1565" class="">步骤 3：手动添加Vmess节点</h3>
+<p data-start="1567" data-end="1612" class="">V2Ray客户端提供了手动添加节点的选项，您可以按照以下步骤输入Vmess节点的详细信息：</p>
+<ol data-start="1614" data-end="1889">
+<li data-start="1614" data-end="1652" class="" style="">
+<p data-start="1617" data-end="1652" class=""><strong data-start="1617" data-end="1629">选择手动添加节点</strong>：在“配置”页面中，点击“手动添加节点”按钮。</p>
+</li>
+<li data-start="1654" data-end="1850" class="" style="">
+<p data-start="1657" data-end="1691" class=""><strong data-start="1657" data-end="1667">填写节点信息</strong>：根据您获得的Vmess节点信息，填写以下内容：</p>
+<ul data-start="1695" data-end="1834">
+<li data-start="1695" data-end="1727" class="" style="">
+<p data-start="1697" data-end="1727" class=""><strong data-start="1697" data-end="1712">地址（Address）</strong>：Vmess节点的服务器地址。</p>
+</li>
+<li data-start="1731" data-end="1758" class="" style="">
+<p data-start="1733" data-end="1758" class=""><strong data-start="1733" data-end="1745">端口（Port）</strong>：Vmess节点的端口号。</p>
+</li>
+<li data-start="1762" data-end="1788" class="" style="">
+<p data-start="1764" data-end="1788" class=""><strong data-start="1764" data-end="1772">UUID</strong>：用户唯一标识符，用于身份验证。</p>
+</li>
+<li data-start="1792" data-end="1830" class="" style="">
+<p data-start="1794" data-end="1830" class=""><strong data-start="1794" data-end="1812">额外ID（Alter ID）</strong>：可选字段，用于进一步加强身份验证。</p>
+</li>
+</ul>
+<p data-start="1838" data-end="1850" class="">确保填写的信息准确无误。</p>
+</li>
+<li data-start="1852" data-end="1889" class="" style="">
+<p data-start="1855" data-end="1889" class=""><strong data-start="1855" data-end="1863">保存配置</strong>：填写完节点信息后，点击“保存”按钮，保存节点配置。</p>
+</li>
+</ol>
+<h3 data-start="1891" data-end="1909" class="">步骤 4：导入Vmess链接</h3>
+<p data-start="1911" data-end="1965" class="">如果您手中有Vmess节点的链接（通常以vmess://开头），V2Ray客户端支持直接导入链接，步骤如下：</p>
+<ol data-start="1967" data-end="2103">
+<li data-start="1967" data-end="2000" class="" style="">
+<p data-start="1970" data-end="2000" class=""><strong data-start="1970" data-end="1980">选择导入链接</strong>：在客户端界面中，点击“导入链接”按钮。</p>
+</li>
+<li data-start="2002" data-end="2045" class="" style="">
+<p data-start="2005" data-end="2045" class=""><strong data-start="2005" data-end="2013">粘贴链接</strong>：在弹出的对话框中粘贴您的Vmess链接，然后点击“提交”按钮。</p>
+</li>
+<li data-start="2047" data-end="2103" class="" style="">
+<p data-start="2050" data-end="2103" class=""><strong data-start="2050" data-end="2060">自动导入节点</strong>：客户端将自动识别并导入Vmess节点信息，您可以在节点管理中查看并选择要使用的节点。</p>
+</li>
+</ol>
+<h2 data-start="2105" data-end="2119" class="">常见问题解答（FAQ）</h2>
+<h3 data-start="2121" data-end="2146" class="">1. 如何查看Vmess节点是否导入成功？</h3>
+<p data-start="2148" data-end="2247" class="">导入节点后，您可以在客户端的“节点管理”或“配置”部分查看已添加的节点。如果节点信息正确，您可以通过连接测试来确认节点是否可以正常使用。通常，客户端会显示节点的连接状态（如“已连接”或“未连接”）。</p>
+<h3 data-start="2249" data-end="2276" class="">2. 如果无法连接到Vmess节点，该怎么办？</h3>
+<p data-start="2278" data-end="2298" class="">遇到无法连接的情况，您可以进行以下排查：</p>
+<ul data-start="2299" data-end="2454">
+<li data-start="2299" data-end="2344" class="" style="">
+<p data-start="2301" data-end="2344" class=""><strong data-start="2301" data-end="2311">核对节点信息</strong>：检查您输入的节点信息是否正确，尤其是服务器地址、端口和UUID。</p>
+</li>
+<li data-start="2345" data-end="2391" class="" style="">
+<p data-start="2347" data-end="2391" class=""><strong data-start="2347" data-end="2357">检查网络连接</strong>：确认您的网络是否正常，确保V2Ray客户端已经启动并处于工作状态。</p>
+</li>
+<li data-start="2392" data-end="2454" class="" style="">
+<p data-start="2394" data-end="2454" class=""><strong data-start="2394" data-end="2407">防火墙或ISP问题</strong>：某些网络环境可能会屏蔽V2Ray的连接请求，您可以尝试更换节点或联系网络服务提供商获取支持。</p>
+</li>
+</ul>
+<h3 data-start="2456" data-end="2478" class="">3. 如何安全地获取Vmess节点？</h3>
+<p data-start="2480" data-end="2554" class="">为了确保使用的Vmess节点安全可靠，建议您从可信的服务商处购买节点，或者在知名的技术社区中获取共享节点。避免使用来源不明的节点，防止遭遇安全风险。</p>
+<h3 data-start="2556" data-end="2583" class="">4. 是否可以通过脚本导入多个Vmess节点？</h3>
+<p data-start="2585" data-end="2658" class="">是的，许多V2Ray客户端支持通过配置文件或脚本批量导入节点。您只需将多个节点的配置添加到V2Ray的配置文件中，或者通过自定义脚本实现批量导入。</p>
+<h3 data-start="2660" data-end="2680" class="">5. Vmess节点是否有限制？</h3>
+<p data-start="2682" data-end="2750" class="">Vmess节点通常会有带宽、连接数等限制，这取决于节点提供商。免费节点的带宽和流量可能受到限制，付费节点则通常提供更稳定和高带宽的服务。</p>
+<h2 data-start="2752" data-end="2757" class="">结论</h2>
+<p data-start="2759" data-end="2881" class="">通过本篇文章的介绍，您已经了解了如何在V2Ray中导入Vmess节点的详细步骤。在正确配置节点后，您可以体验更安全、快速的网络连接，享受更自由的互联网环境。掌握Vmess节点的导入技巧，不仅能够提升您的上网体验，还能有效保障个人隐私和数据安全。</p>
+<p data-start="2883" data-end="2967" class="">无论您是V2Ray的新手还是有一定经验的用户，了解并正确使用Vmess节点将极大提高您的网络体验。希望本文能够为您提供帮助，并助您在使用V2Ray的过程中更加得心应手。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-111672.htm">Clash频繁断线？深度解析“连接一下就不能用了”的原因与全面解决指南</a></p>
+                                        <p>下一个：<a href="/news/article-112129.htm">移动4G网络无法连接Shadowrocket的解决方法与常见问题解析</a></p>
+                                    </div>
+                            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-110863.htm" title="Netflix 科学上网完全指南：如何突破限制，畅享全球流媒体内容">Netflix 科学上网完全指南：如何突破限制，畅享全球流媒体内容</a></li>
+                        <li class="py-2"><a href="/news/article-112492.htm" title="iOS科学上网软件完全指南：选择、配置与常见问题解答">iOS科学上网软件完全指南：选择、配置与常见问题解答</a></li>
+                        <li class="py-2"><a href="/news/article-112130.htm" title="v2ray稳定运行的关键一步：系统校时详解与实操指南">v2ray稳定运行的关键一步：系统校时详解与实操指南</a></li>
+                        <li class="py-2"><a href="/news/article-112835.htm" title="如何在群晖NAS上开启Clash实现科学上网：详细教程与设置指南">如何在群晖NAS上开启Clash实现科学上网：详细教程与设置指南</a></li>
+                        <li class="py-2"><a href="/news/article-111672.htm" title="Clash频繁断线？深度解析“连接一下就不能用了”的原因与全面解决指南">Clash频繁断线？深度解析“连接一下就不能用了”的原因与全面解决指南</a></li>
+                        <li class="py-2"><a href="/news/article-109980.htm" title="解决V2Ray不起作用问题的全面指南">解决V2Ray不起作用问题的全面指南</a></li>
+                        <li class="py-2"><a href="/news/article-109133.htm" title="完整指南：如何在电脑上使用SSR实现科学上网">完整指南：如何在电脑上使用SSR实现科学上网</a></li>
+                        <li class="py-2"><a href="/news/article-112489.htm" title="圈X订阅Vmess的完整使用指南：安全、快速、灵活的科学上网解决方案">圈X订阅Vmess的完整使用指南：安全、快速、灵活的科学上网解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-108471.htm" title="完整指南：如何有效查看和监控 V2Ray 的运行状态">完整指南：如何有效查看和监控 V2Ray 的运行状态</a></li>
+                        <li class="py-2"><a href="/news/article-109128.htm" title="Shadowrocket流量全掌控：iOS用户如何高效管理VPN使用限额">Shadowrocket流量全掌控：iOS用户如何高效管理VPN使用限额</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ::::::::::::::: /END ABOUT US :::::::::::::::::::-->
+        <!-- ::::::::::::::: FOOTER ::::::::::::::::::::-->
+    <div id="footer" class="pt-lg-5 pt-0 mt-0 mt-lg-5 text-center text-lg-start">
+        <div class="container">
+            <hr class="hr">
+            <div class="row gy-4 gy-lg-0 pb-5 pb-lg-4">
+                <div class="col-sm-4 font-size-14 accent-text-color text-center text-lg-start">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <a href="/">Clash免费节点 订阅教程网</a> 版权所有 Powered by WordPress
+                </div>
+                <div class="col-sm-4 text-center">
+                    <ul class="list-unstyled font-size-14 list-inline mb-0">
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#">Terms</a></li>
+                        <li class="list-inline-item accent-text-color">·</li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 text-lg-end text-center">
+                    <ul class="list-unstyled font-size-14 list-inline mb-0">
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="facebook" class="icon-24"></i></a></li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="twitter" class="icon-24"></i></a></li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="instagram" class="icon-24"></i></a></li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="slack" class="icon-24"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ::::::::::::::: /END FOOTER :::::::::::::::-->
+    <script src="/assets/website/js/frontend/clashxmeta/jquery-1.12.4.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/pace.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/wow.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/feather.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>

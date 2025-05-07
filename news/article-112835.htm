@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://nodev2rayclash.github.io/news/article-112835.htm" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何在群晖NAS上开启Clash实现科学上网：详细教程与设置指南</title>
+        <meta name="description" content="随着互联网的不断发展，网络自由和隐私安全成为越来越多用户关注的焦点，尤其是在一些地区，网络限制严重，科学上网成为日常生活中不可或缺的一部分。而群晖（Synology）作为一款功能强大的网络附加存储（N" />
+        <link rel="icon" href="/assets/website/img/clashxmeta/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="Clash免费节点 订阅教程网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://nodev2rayclash.github.io/news/article-112835.htm" />
+    <meta property="og:site_name" content="Clash免费节点 订阅教程网" />
+    <meta property="og:title" content="如何在群晖NAS上开启Clash实现科学上网：详细教程与设置指南" />
+    <meta property="og:image" content="https://nodev2rayclash.github.io/uploads/20241102-1/f4ba2128dc4fd70974c572d0e1be1816.webp" />
+        <meta property="og:release_date" content="2025-05-07T08:56:07" />
+    <meta property="og:updated_time" content="2025-05-07T08:56:07" />
+        <meta property="og:description" content="随着互联网的不断发展，网络自由和隐私安全成为越来越多用户关注的焦点，尤其是在一些地区，网络限制严重，科学上网成为日常生活中不可或缺的一部分。而群晖（Synology）作为一款功能强大的网络附加存储（N" />
+        
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="/assets/website/css/clashxmeta/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/clashxmeta/animate.min.css">
+    <link href="/assets/website/css/clashxmeta/pace-theme-loading-bar.css" rel="stylesheet">
+    <link href="/assets/website/css/clashxmeta/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/clashxmeta/YouTubePopUp.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxmeta/styles.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="如何在群晖NAS上开启Clash实现科学上网：详细教程与设置指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZLNMQFZKK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MZLNMQFZKK');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <div id="preloader">
+        <div class="loadingio-spinner-ripple-n04314c8ef9">
+            <div class="ldio-r67ztvwtjg">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="back-to-top" class="d-flex align-items-center justify-content-center display-6">☝️</div>
+    <div class="bg-gradient-to-top">
+                <!-- ::::::::::: NAVBAR :::::::::::::::-->
+        <div class="fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light pt-4">
+                    <div class="container-fluid p-0">
+                        <a class="navbar-brand" href="/">
+                                                        <span>Clash免费节点</span>
+                                                    </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto mx-auto">
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/">首页</a>
+                                </li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                                </li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/news/">新闻资讯</a>
+                                </li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="/client.htm">客户端</a>
+                                </li>
+                                                            </ul>
+                            
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ::::::::::: /END NAVBAR ::::::::::-->
+        <!-- ::::::::::: INTRODUCTION :::::::::::::::-->
+        <div id="blog-hero">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-8 offset-sm-2">
+                        <h1 class="display-6 font-weight-medium pb-3 text-center">如何在群晖NAS上开启Clash实现科学上网：详细教程与设置指南</h1>
+                        <p class="accent-text-color pb-3 text-center font-size-14">
+                            <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / <span>正文</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ::::::::::: /END INTRODUCTION ::::::::::-->
+    </div>
+    <!-- ::::::::::::::: ABOUT US ::::::::::::::::::::::::-->
+    <div class="container wow animate__fadeInUp pt-5" id="about">
+        <div class="row">
+            <div class="col-md-9">
+                                <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="36" data-end="228" class="">随着互联网的不断发展，网络自由和隐私安全成为越来越多用户关注的焦点，尤其是在一些地区，网络限制严重，科学上网成为日常生活中不可或缺的一部分。而群晖（Synology）作为一款功能强大的网络附加存储（NAS）设备，在其上运行科学上网工具Clash，成为了不少用户的首选。本文将详细介绍如何在群晖NAS设备上安装和配置Clash，以便实现科学上网功能，并深入探讨Clash的使用及其优势。</p>
+<hr data-start="230" data-end="233" class="" style="">
+<h2 data-start="235" data-end="247" class="">什么是Clash？</h2>
+<p data-start="249" data-end="398" class="">Clash是一款开源的代理工具，专门用于解决网络访问限制问题。它支持多种协议，如Shadowsocks、V2Ray等，并能够通过配置多个代理节点，将网络流量分发到不同的代理服务器，从而实现科学上网。Clash的优势在于其高效、灵活，支持自定义规则、动态路由等功能，可以实现更加智能和稳定的上网体验。</p>
+<p data-start="400" data-end="469" class="">在群晖设备上使用Clash，能充分利用群晖的强大性能，并通过Docker容器实现独立的代理环境。这种部署方式不仅高效，而且便于管理和扩展。</p>
+<hr data-start="471" data-end="474" class="" style="">
+<h2 data-start="476" data-end="485" class="">群晖系统概述</h2>
+<p data-start="487" data-end="664" class="">群晖（Synology）是一款广受欢迎的网络附加存储（NAS）设备，广泛应用于个人、家庭和企业级数据存储。群晖NAS设备运行的操作系统——DiskStation Manager（DSM）提供了丰富的应用功能，支持多种第三方应用的安装和扩展。通过群晖强大的硬件性能和灵活的软件平台，我们能够在群晖设备上安装Docker，并运行Clash，实现科学上网功能。</p>
+<hr data-start="666" data-end="669" class="" style="">
+<h2 data-start="671" data-end="683" class="">开始之前：准备工作</h2>
+<p data-start="685" data-end="723" class="">在开始在群晖上安装Clash之前，我们需要进行一些准备工作。以下是所需步骤：</p>
+<ol data-start="725" data-end="970">
+<li data-start="725" data-end="792" class="" style="">
+<p data-start="728" data-end="792" class=""><strong data-start="728" data-end="738">确认设备支持</strong>：确保你的群晖NAS设备是x86架构及以上的型号。因为Clash需要较高的处理能力来处理网络流量和代理请求。</p>
+</li>
+<li data-start="794" data-end="897" class="" style="">
+<p data-start="797" data-end="897" class=""><strong data-start="797" data-end="809">安装Docker</strong>：Clash将运行在Docker容器中，因此需要在群晖设备上安装Docker应用。Docker提供了一种轻量级的虚拟化方式，可以在群晖设备上创建一个独立的环境来运行Clash。</p>
+</li>
+<li data-start="899" data-end="970" class="" style="">
+<p data-start="902" data-end="970" class=""><strong data-start="902" data-end="912">获取代理信息</strong>：你需要获取科学上网所需的代理节点信息。通常，这些信息以订阅链接的形式提供，并包含节点的IP、端口、加密方式等配置。</p>
+</li>
+</ol>
+<hr data-start="972" data-end="975" class="" style="">
+<h2 data-start="977" data-end="996" class="">步骤一：在群晖上安装Docker</h2>
+<p data-start="998" data-end="1035" class="">在群晖上安装Docker应用是开启Clash的第一步。以下是具体操作步骤：</p>
+<ol data-start="1037" data-end="1205">
+<li data-start="1037" data-end="1079" class="" style="">
+<p data-start="1040" data-end="1079" class=""><strong data-start="1040" data-end="1053">登录群晖DSM界面</strong>：在浏览器中输入群晖的IP地址，登录DSM管理界面。</p>
+</li>
+<li data-start="1081" data-end="1158" class="" style="">
+<p data-start="1084" data-end="1158" class=""><strong data-start="1084" data-end="1096">安装Docker</strong>：进入DSM的“套件中心”应用，搜索“Docker”，然后点击安装。安装过程可能需要几分钟，具体时间取决于你的群晖设备性能。</p>
+</li>
+<li data-start="1160" data-end="1205" class="" style="">
+<p data-start="1163" data-end="1205" class=""><strong data-start="1163" data-end="1175">启动Docker</strong>：安装完成后，在主菜单中找到“Docker”应用，点击启动。</p>
+</li>
+</ol>
+<hr data-start="1207" data-end="1210" class="" style="">
+<h2 data-start="1212" data-end="1234" class="">步骤二：在Docker中安装Clash</h2>
+<p data-start="1236" data-end="1286" class="">Docker安装完成后，我们可以开始在Docker中部署Clash。以下是安装Clash的具体步骤：</p>
+<ol data-start="1288" data-end="1690">
+<li data-start="1288" data-end="1327" class="" style="">
+<p data-start="1291" data-end="1327" class=""><strong data-start="1291" data-end="1303">打开Docker</strong>：在群晖DSM界面中，点击启动Docker应用。</p>
+</li>
+<li data-start="1329" data-end="1429" class="" style="">
+<p data-start="1332" data-end="1429" class=""><strong data-start="1332" data-end="1345">搜索Clash镜像</strong>：在Docker界面中，点击“注册表”选项，使用搜索框输入“clash”。在搜索结果中，选择合适的Clash镜像（如 <code data-start="1404" data-end="1421">dreamacro/clash</code>），并点击下载。</p>
+</li>
+<li data-start="1431" data-end="1517" class="" style="">
+<p data-start="1434" data-end="1517" class=""><strong data-start="1434" data-end="1442">启动容器</strong>：下载完成后，点击“镜像”标签页，选择刚才下载的Clash镜像，然后点击“启动”按钮。系统将提示你设置容器的名称（如“clash”）以及其他必要配置。</p>
+</li>
+<li data-start="1519" data-end="1578" class="" style="">
+<p data-start="1522" data-end="1578" class=""><strong data-start="1522" data-end="1530">设置网络</strong>：选择“桥接模式”作为容器的网络设置，这样可以确保容器可以直接访问外网并通过群晖局域网进行通信。</p>
+</li>
+<li data-start="1580" data-end="1653" class="" style="">
+<p data-start="1583" data-end="1653" class=""><strong data-start="1583" data-end="1593">设置端口映射</strong>：在容器的端口设置中，将Clash所使用的端口（通常为7890）映射到主机上，以便在浏览器中访问Clash界面进行配置。</p>
+</li>
+<li data-start="1655" data-end="1690" class="" style="">
+<p data-start="1658" data-end="1690" class=""><strong data-start="1658" data-end="1666">启动容器</strong>：完成设置后，点击“应用”并启动Clash容器。</p>
+</li>
+</ol>
+<hr data-start="1692" data-end="1695" class="" style="">
+<h2 data-start="1697" data-end="1711" class="">步骤三：配置Clash</h2>
+<p data-start="1713" data-end="1757" class="">在Clash容器启动后，接下来需要配置Clash以确保它能够正常工作。具体配置步骤如下：</p>
+<ol data-start="1759" data-end="2176">
+<li data-start="1759" data-end="1811" class="" style="">
+<p data-start="1762" data-end="1811" class=""><strong data-start="1762" data-end="1772">进入容器设置</strong>：在Docker中找到你刚才创建的Clash容器，右击容器名称，选择“编辑”。</p>
+</li>
+<li data-start="1813" data-end="1951" class="" style="">
+<p data-start="1816" data-end="1841" class=""><strong data-start="1816" data-end="1826">配置环境变量</strong>：在容器设置中，设置环境变量：</p>
+<ul data-start="1845" data-end="1951">
+<li data-start="1845" data-end="1908" class="" style="">
+<p data-start="1847" data-end="1908" class=""><code data-start="1847" data-end="1855">CONFIG</code>：指定Clash配置文件路径，通常为 <code data-start="1874" data-end="1907">/root/.config/clash/config.yaml</code>。</p>
+</li>
+<li data-start="1912" data-end="1951" class="" style="">
+<p data-start="1914" data-end="1951" class=""><code data-start="1914" data-end="1925">INTERFACE</code>：设置网络接口，一般情况下可以设置为 <code data-start="1944" data-end="1950">eth0</code>。</p>
+</li>
+</ul>
+</li>
+<li data-start="1953" data-end="2083" class="" style="">
+<p data-start="1956" data-end="2083" class=""><strong data-start="1956" data-end="1968">上传代理配置文件</strong>：Clash需要一个配置文件来确定代理节点的设置。你可以通过订阅链接获取代理节点，下载并生成<code data-start="2014" data-end="2027">config.yaml</code>文件。将该文件上传至容器中指定的路径（如 <code data-start="2048" data-end="2081">/root/.config/clash/config.yaml</code>）。</p>
+</li>
+<li data-start="2085" data-end="2176" class="" style="">
+<p data-start="2088" data-end="2176" class=""><strong data-start="2088" data-end="2098">设置代理规则</strong>：配置文件中包含了代理节点的IP地址、端口、加密方式等信息。你可以根据自己的需要，设置代理的规则和策略。例如，设置某些网站通过代理访问，其他网站则直接访问。</p>
+</li>
+</ol>
+<hr data-start="2178" data-end="2181" class="" style="">
+<h2 data-start="2183" data-end="2202" class="">步骤四：启动Clash并测试连接</h2>
+<p data-start="2204" data-end="2235" class="">配置完成后，我们可以启动Clash，并通过浏览器进行连接测试：</p>
+<ol data-start="2237" data-end="2403">
+<li data-start="2237" data-end="2322" class="" style="">
+<p data-start="2240" data-end="2322" class=""><strong data-start="2240" data-end="2253">访问Clash界面</strong>：在浏览器中输入<code data-start="2261" data-end="2281">http://&lt;群晖IP&gt;:7890</code>，进入Clash的Web管理界面。如果一切顺利，你应该能够看到Clash的主页面。</p>
+</li>
+<li data-start="2324" data-end="2403" class="" style="">
+<p data-start="2327" data-end="2403" class=""><strong data-start="2327" data-end="2337">测试代理连接</strong>：尝试访问被墙的网站，确认代理是否能够正常工作。你还可以通过测试工具（如speedtest.net）测试网络速度，确认代理的稳定性。</p>
+</li>
+</ol>
+<hr data-start="2405" data-end="2408" class="" style="">
+<h2 data-start="2410" data-end="2424" class="">常见问题解答（FAQ）</h2>
+<h3 data-start="2426" data-end="2453" class="">Q1: 群晖和Clash、Docker兼容吗？</h3>
+<p data-start="2455" data-end="2535" class=""><strong data-start="2455" data-end="2461">是的</strong>，群晖支持Docker技术，可以在群晖设备上完美运行Clash。Docker容器提供了一个轻量级的虚拟化环境，非常适合运行Clash这样的代理工具。</p>
+<hr data-start="2537" data-end="2540" class="" style="">
+<h3 data-start="2542" data-end="2562" class="">Q2: 如何更新Clash配置？</h3>
+<p data-start="2564" data-end="2643" class="">Clash的配置文件<code data-start="2574" data-end="2587">config.yaml</code>可以通过编辑容器中的配置文件来更新。你可以根据需要修改代理节点、路由规则等。修改后，重启Clash容器即可生效。</p>
+<hr data-start="2645" data-end="2648" class="" style="">
+<h3 data-start="2650" data-end="2676" class="">Q3: 如果Clash无法启动，我该怎么办？</h3>
+<p data-start="2678" data-end="2767" class="">如果Clash无法启动，建议检查Docker容器的日志，查看是否有错误信息。常见问题可能包括端口冲突、配置文件错误等。你可以尝试重新配置Docker网络或重新上传正确的配置文件。</p>
+<hr data-start="2769" data-end="2772" class="" style="">
+<h2 data-start="2774" data-end="2779" class="">总结</h2>
+<p data-start="2781" data-end="2922" class="">在群晖NAS上运行Clash是一个高效的科学上网解决方案。通过Docker容器技术，用户可以轻松部署Clash，并通过配置代理节点和路由规则，实现智能、稳定的上网体验。无论你是普通家庭用户，还是对网络安全和隐私有较高要求的专业用户，群晖+Clash的组合都是一个非常值得尝试的方案。</p>
+<h3 data-start="2924" data-end="2931" class="">点评：</h3>
+<p data-start="2933" data-end="3090" class="">这篇文章内容全面、结构清晰，非常适合那些希望利用群晖设备提升网络访问体验的用户。文章通过详细的步骤介绍了如何在群晖设备上安装和配置Clash，涵盖了从基础设置到容器部署的所有操作，具有很高的可操作性。同时，常见问题的解答部分也帮助用户排除了可能遇到的一些技术难题。文章语言简洁、易懂，非常适合中级技术用户进行操作。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-112832.htm">2023年度科学上网终极指南：解锁网络自由的实用方法与工具深度解析</a></p>
+                                    </div>
+                            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-112492.htm" title="iOS科学上网软件完全指南：选择、配置与常见问题解答">iOS科学上网软件完全指南：选择、配置与常见问题解答</a></li>
+                        <li class="py-2"><a href="/news/article-111675.htm" title="如何在V2Ray中导入Vmess节点：一步步详解与常见问题解决">如何在V2Ray中导入Vmess节点：一步步详解与常见问题解决</a></li>
+                        <li class="py-2"><a href="/news/article-112129.htm" title="移动4G网络无法连接Shadowrocket的解决方法与常见问题解析">移动4G网络无法连接Shadowrocket的解决方法与常见问题解析</a></li>
+                        <li class="py-2"><a href="/news/article-111672.htm" title="Clash频繁断线？深度解析“连接一下就不能用了”的原因与全面解决指南">Clash频繁断线？深度解析“连接一下就不能用了”的原因与全面解决指南</a></li>
+                        <li class="py-2"><a href="/news/article-110859.htm" title="舞蹈对抗的灵魂碰撞：在节拍中绽放文化的自我">舞蹈对抗的灵魂碰撞：在节拍中绽放文化的自我</a></li>
+                        <li class="py-2"><a href="/news/article-110863.htm" title="Netflix 科学上网完全指南：如何突破限制，畅享全球流媒体内容">Netflix 科学上网完全指南：如何突破限制，畅享全球流媒体内容</a></li>
+                        <li class="py-2"><a href="/news/article-109128.htm" title="Shadowrocket流量全掌控：iOS用户如何高效管理VPN使用限额">Shadowrocket流量全掌控：iOS用户如何高效管理VPN使用限额</a></li>
+                        <li class="py-2"><a href="/news/article-112489.htm" title="圈X订阅Vmess的完整使用指南：安全、快速、灵活的科学上网解决方案">圈X订阅Vmess的完整使用指南：安全、快速、灵活的科学上网解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-108471.htm" title="完整指南：如何有效查看和监控 V2Ray 的运行状态">完整指南：如何有效查看和监控 V2Ray 的运行状态</a></li>
+                        <li class="py-2"><a href="/news/article-112835.htm" title="如何在群晖NAS上开启Clash实现科学上网：详细教程与设置指南">如何在群晖NAS上开启Clash实现科学上网：详细教程与设置指南</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ::::::::::::::: /END ABOUT US :::::::::::::::::::-->
+        <!-- ::::::::::::::: FOOTER ::::::::::::::::::::-->
+    <div id="footer" class="pt-lg-5 pt-0 mt-0 mt-lg-5 text-center text-lg-start">
+        <div class="container">
+            <hr class="hr">
+            <div class="row gy-4 gy-lg-0 pb-5 pb-lg-4">
+                <div class="col-sm-4 font-size-14 accent-text-color text-center text-lg-start">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <a href="/">Clash免费节点 订阅教程网</a> 版权所有 Powered by WordPress
+                </div>
+                <div class="col-sm-4 text-center">
+                    <ul class="list-unstyled font-size-14 list-inline mb-0">
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#">Terms</a></li>
+                        <li class="list-inline-item accent-text-color">·</li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 text-lg-end text-center">
+                    <ul class="list-unstyled font-size-14 list-inline mb-0">
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="facebook" class="icon-24"></i></a></li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="twitter" class="icon-24"></i></a></li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="instagram" class="icon-24"></i></a></li>
+                        <li class="list-inline-item"><a class="accent-text-color text-decoration-none" href="#"><i data-feather="slack" class="icon-24"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ::::::::::::::: /END FOOTER :::::::::::::::-->
+    <script src="/assets/website/js/frontend/clashxmeta/jquery-1.12.4.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/pace.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/wow.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/feather.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxmeta/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
