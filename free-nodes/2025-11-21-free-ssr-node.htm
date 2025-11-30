@@ -297,47 +297,18 @@ A：部分VPN提供免费版，但通常功能受限且速度较慢。付费VPN�
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2025-11-20-free-shadowrocket-node.htm">Clash免费节点 - 11月20日22.7M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅节点分享</a></p>
+        <p>下一个：<a href="/free-nodes/2025-11-22-free-subscribe-node.htm">Clash免费节点 - 11月22日18.8M/S|免费Clash节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点分享</a></p>
     </div>
 <h4>FAQ</h4>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 是否支持 IPv6 流量代理？</h5></div>
-    <div class="panel-body">
-        Mellow 支持 IPv6，只需在配置文件中启用 IPv6 DNS 解析并确认操作系统开启 IPv6 路由功能。部分节点若不支持 IPv6，则相关请求会自动回退到 IPv4，保证兼容性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用功能有哪些好处？</h5></div>
-    <div class="panel-body">
-        多路复用允许多个短连接共享同一 QUIC 通道，减少握手延迟和资源消耗。在高并发或频繁短连接场景下，能显著提升吞吐量和稳定性，尤其适合游戏或即时通讯应用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的 QUIC 多路复用在游戏中有什么优势？</h5></div>
-    <div class="panel-body">
-        QUIC 多路复用减少握手次数和延迟，适合高频短连接场景，如游戏和即时通讯。它能提高吞吐量和连接稳定性，在高丢包或高延迟环境下保持低延迟网络体验。<hr />    </div>
-</div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的策略组如何根据延迟自动选择节点？</h5></div>
     <div class="panel-body">
         策略组可通过节点延迟测试结果自动选择最优节点。结合路由规则，可保证国内流量直连、海外流量走最佳节点，提高访问速度和连接稳定性，优化整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash Premium 与普通版本有何不同？</h5></div>
+    <div class="panel-heading"><h5>VMess AEAD 加密在封锁严格地区的作用？</h5></div>
     <div class="panel-body">
-        Clash Premium 是 Clash 的增强版，增加了 TUN 模式、脚本功能、流量统计与规则订阅等高级特性。它更适合有复杂分流需求的用户，尤其是需要对系统级代理进行全局控制的场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何实现？</h5></div>
-    <div class="panel-body">
-        用户添加订阅 URL 后，Nekoray 会定期下载最新节点列表并替换旧节点。保持节点列表最新可减少手动维护，保证节点可用性和网络连接稳定性，提升使用体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 是否需要证书？</h5></div>
-    <div class="panel-body">
-        是的，Trojan 必须使用有效的 TLS 证书才能运行。推荐使用 Let's Encrypt 免费证书。若证书过期或配置错误，客户端将无法建立加密连接，导致无法访问外部网络。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的策略组如何实现按域名分流？</h5></div>
-    <div class="panel-body">
-        Sing-box 支持根据域名规则匹配流量，将不同网站或应用流量分配到指定节点。结合策略组自动切换低延迟节点，可优化访问速度，保证网络稳定性和流畅体验。<hr />    </div>
+        AEAD 加密防止数据篡改和流量特征泄露，降低被封锁和 DPI 检测风险。保证节点长期可用，提高数据传输安全性和访问可靠性，优化用户体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Mellow 支持哪些平台？</h5></div>
@@ -345,9 +316,39 @@ A：部分VPN提供免费版，但通常功能受限且速度较慢。付费VPN�
         Mellow 是基于 Electron 的跨平台代理工具，支持 Windows、macOS 和 Linux。它通过 TUN 模式接管全局流量，并支持 Clash 规则和订阅格式，非常灵活。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密在封锁严格地区的作用？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 的策略组如何实现按域名分流？</h5></div>
     <div class="panel-body">
-        AEAD 加密防止数据篡改和流量特征泄露，降低被封锁和 DPI 检测风险。保证节点长期可用，提高数据传输安全性和访问可靠性，优化用户体验。    </div>
+        Sing-box 支持根据域名规则匹配流量，将不同网站或应用流量分配到指定节点。结合策略组自动切换低延迟节点，可优化访问速度，保证网络稳定性和流畅体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 的 QUIC 多路复用在游戏中有什么优势？</h5></div>
+    <div class="panel-body">
+        QUIC 多路复用减少握手次数和延迟，适合高频短连接场景，如游戏和即时通讯。它能提高吞吐量和连接稳定性，在高丢包或高延迟环境下保持低延迟网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash Premium 与普通版本有何不同？</h5></div>
+    <div class="panel-body">
+        Clash Premium 是 Clash 的增强版，增加了 TUN 模式、脚本功能、流量统计与规则订阅等高级特性。它更适合有复杂分流需求的用户，尤其是需要对系统级代理进行全局控制的场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 是否支持 IPv6 流量代理？</h5></div>
+    <div class="panel-body">
+        Mellow 支持 IPv6，只需在配置文件中启用 IPv6 DNS 解析并确认操作系统开启 IPv6 路由功能。部分节点若不支持 IPv6，则相关请求会自动回退到 IPv4，保证兼容性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何实现？</h5></div>
+    <div class="panel-body">
+        用户添加订阅 URL 后，Nekoray 会定期下载最新节点列表并替换旧节点。保持节点列表最新可减少手动维护，保证节点可用性和网络连接稳定性，提升使用体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 的多路复用功能有哪些好处？</h5></div>
+    <div class="panel-body">
+        多路复用允许多个短连接共享同一 QUIC 通道，减少握手延迟和资源消耗。在高并发或频繁短连接场景下，能显著提升吞吐量和稳定性，尤其适合游戏或即时通讯应用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan 是否需要证书？</h5></div>
+    <div class="panel-body">
+        是的，Trojan 必须使用有效的 TLS 证书才能运行。推荐使用 Let's Encrypt 免费证书。若证书过期或配置错误，客户端将无法建立加密连接，导致无法访问外部网络。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -376,16 +377,16 @@ A：部分VPN提供免费版，但通常功能受限且速度较慢。付费VPN�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-9-free-clash-subscribe.htm" title="Clash免费节点 - 10月9日21.5M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点订阅节点分享">Clash免费节点 - 10月9日21.5M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-17-free-subscribe-node.htm" title="Clash免费节点 - 11月17日22.4M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点订阅节点分享">Clash免费节点 - 11月17日22.4M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-3-free-high-speed-nodes.htm" title="Clash免费节点 - 11月3日22.4M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点分享">Clash免费节点 - 11月3日22.4M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-4-free-node-subscribe.htm" title="Clash免费节点 - 11月4日19.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点分享">Clash免费节点 - 11月4日19.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-6-free-ssr-subscribe.htm" title="Clash免费节点 - 10月6日18.4M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Clash节点订阅节点分享">Clash免费节点 - 10月6日18.4M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Clash节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-19-clash-windows.htm" title="Clash免费节点 - 10月19日22.6M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点分享">Clash免费节点 - 10月19日22.6M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-15-free-node-subscribe-links.htm" title="Clash免费节点 - 11月15日20.6M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点分享">Clash免费节点 - 11月15日20.6M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-7-clash-node.htm" title="Clash免费节点 - 10月7日20.6M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点订阅节点分享">Clash免费节点 - 10月7日20.6M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-12-free-v2ray-subscribe.htm" title="Clash免费节点 - 10月12日19.7M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点分享">Clash免费节点 - 10月12日19.7M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-5-free-shadowrocket-node.htm" title="Clash免费节点 - 11月5日21.2M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点分享">Clash免费节点 - 11月5日21.2M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-10-node-share-links.htm" title="Clash免费节点 - 10月10日19M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点订阅节点分享">Clash免费节点 - 10月10日19M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-11-clash-windows.htm" title="Clash免费节点 - 10月11日21.8M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Clash节点订阅节点分享">Clash免费节点 - 10月11日21.8M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Clash节点订阅节点分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-14-node-share-links.htm" title="Clash免费节点 - 10月14日21.8M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点订阅节点分享">Clash免费节点 - 10月14日21.8M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-18-free-clash-subscribe.htm" title="Clash免费节点 - 11月18日22.7M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点分享">Clash免费节点 - 11月18日22.7M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-10-clash-node-daily-updates.htm" title="Clash免费节点 - 11月10日18.7M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点分享">Clash免费节点 - 11月10日18.7M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-9-free-subscribe-node.htm" title="Clash免费节点 - 11月9日21.8M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点订阅节点分享">Clash免费节点 - 11月9日21.8M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-21-free-v2ray-subscribe.htm" title="Clash免费节点 - 10月21日19.2M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享">Clash免费节点 - 10月21日19.2M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-14-free-high-speed-nodes.htm" title="Clash免费节点 - 11月14日18.1M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点分享">Clash免费节点 - 11月14日18.1M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-15-free-ssr-subscribe.htm" title="Clash免费节点 - 10月15日22.6M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点分享">Clash免费节点 - 10月15日22.6M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点分享</a></li>
                     </ul>
     </div>
 </div>
@@ -397,7 +398,7 @@ A：部分VPN提供免费版，但通常功能受限且速度较慢。付费VPN�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
