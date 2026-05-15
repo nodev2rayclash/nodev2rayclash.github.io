@@ -416,9 +416,9 @@ wget https://github.com/MetaCubeX/mihomo/releases/latest/download/clash-meta-lin
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 手动节点切换有哪些优点？</h5></div>
+    <div class="panel-heading"><h5>Surfboard 策略组如何提升游戏和视频体验？</h5></div>
     <div class="panel-body">
-        手动切换节点可以根据延迟和用途选择最佳节点，适合在节点不稳定或特殊需求下使用。虽然不支持自动订阅更新，但足够满足轻量用户对节点管理和分流的需求。<hr />    </div>
+        通过策略组将游戏、视频和浏览器流量分配到低延迟、高带宽节点，Surfboard 可自动切换最优节点，减少延迟和卡顿，提高整体网络体验和访问速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan TLS 如何避免被 DPI 检测？</h5></div>
@@ -426,34 +426,9 @@ wget https://github.com/MetaCubeX/mihomo/releases/latest/download/clash-meta-lin
         通过选择真实可访问域名并使用有效证书，Trojan 流量可完全模拟 HTTPS 请求。隐藏真实流量特征，降低被封锁和 DPI 检测风险，保证节点长期可用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何通过域名规则实现精准分流？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 在使用订阅时要注意什么？</h5></div>
     <div class="panel-body">
-        Sing-box 支持根据域名匹配流量，将不同网站或应用流量分配到指定节点。结合策略组，可实现自动切换最优节点，优化访问速度和网络稳定性，提高整体使用体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的 QUIC 多路复用在游戏中有什么优势？</h5></div>
-    <div class="panel-body">
-        QUIC 多路复用减少握手次数和延迟，适合高频短连接场景，如游戏和即时通讯。它能提高吞吐量和连接稳定性，在高丢包或高延迟环境下保持低延迟网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 策略组如何提升游戏和视频体验？</h5></div>
-    <div class="panel-body">
-        通过策略组将游戏、视频和浏览器流量分配到低延迟、高带宽节点，Surfboard 可自动切换最优节点，减少延迟和卡顿，提高整体网络体验和访问速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在 Windows 上安装 Clash for Windows？</h5></div>
-    <div class="panel-body">
-        在 Windows 上安装 Clash for Windows 十分简单。只需前往官方 GitHub 页面下载最新版安装包，运行安装程序后导入订阅链接或配置文件即可。安装完成后，用户可以通过图形化界面方便地切换节点、编辑规则和控制代理模式。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2RayN 订阅更新后节点重复如何清理？</h5></div>
-    <div class="panel-body">
-        V2RayN 在导入订阅时有时会产生重复节点，可以点击右键菜单选择“删除重复项”。若仍存在旧节点缓存，可清空配置文件夹内的 history.json 并重新导入订阅，保证节点列表整洁。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何备份 Clash 配置文件？</h5></div>
-    <div class="panel-body">
-        Clash 的配置文件通常位于程序目录或配置文件夹中（如 Windows 下的 .config/clash）。用户可直接复制该 YAML 文件以备份，也可将订阅链接保存，便于后续恢复或在其他设备上同步使用。<hr />    </div>
+        在 Shadowrocket 中添加订阅时，应确保链接以 https 开头且格式正确。此外，若节点更新失败，可尝试关闭缓存或重新获取订阅链接，以保证配置文件同步最新节点数据。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 如何按端口分流不同类型流量？</h5></div>
@@ -461,9 +436,34 @@ wget https://github.com/MetaCubeX/mihomo/releases/latest/download/clash-meta-lin
         Sing-box 支持根据端口匹配流量，将不同应用流量分配到指定节点。结合策略组可实现精准分流，提高访问速度和网络稳定性，优化整体网络体验和管理效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 在使用订阅时要注意什么？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 的 QUIC 多路复用在游戏中有什么优势？</h5></div>
     <div class="panel-body">
-        在 Shadowrocket 中添加订阅时，应确保链接以 https 开头且格式正确。此外，若节点更新失败，可尝试关闭缓存或重新获取订阅链接，以保证配置文件同步最新节点数据。    </div>
+        QUIC 多路复用减少握手次数和延迟，适合高频短连接场景，如游戏和即时通讯。它能提高吞吐量和连接稳定性，在高丢包或高延迟环境下保持低延迟网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何备份 Clash 配置文件？</h5></div>
+    <div class="panel-body">
+        Clash 的配置文件通常位于程序目录或配置文件夹中（如 Windows 下的 .config/clash）。用户可直接复制该 YAML 文件以备份，也可将订阅链接保存，便于后续恢复或在其他设备上同步使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2RayN 订阅更新后节点重复如何清理？</h5></div>
+    <div class="panel-body">
+        V2RayN 在导入订阅时有时会产生重复节点，可以点击右键菜单选择“删除重复项”。若仍存在旧节点缓存，可清空配置文件夹内的 history.json 并重新导入订阅，保证节点列表整洁。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何在 Windows 上安装 Clash for Windows？</h5></div>
+    <div class="panel-body">
+        在 Windows 上安装 Clash for Windows 十分简单。只需前往官方 GitHub 页面下载最新版安装包，运行安装程序后导入订阅链接或配置文件即可。安装完成后，用户可以通过图形化界面方便地切换节点、编辑规则和控制代理模式。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 如何通过域名规则实现精准分流？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持根据域名匹配流量，将不同网站或应用流量分配到指定节点。结合策略组，可实现自动切换最优节点，优化访问速度和网络稳定性，提高整体使用体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 手动节点切换有哪些优点？</h5></div>
+    <div class="panel-body">
+        手动切换节点可以根据延迟和用途选择最佳节点，适合在节点不稳定或特殊需求下使用。虽然不支持自动订阅更新，但足够满足轻量用户对节点管理和分流的需求。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -492,16 +492,16 @@ wget https://github.com/MetaCubeX/mihomo/releases/latest/download/clash-meta-lin
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-4-19-free-node-subscribe.htm" title="Clash免费节点 - 4月19日19.7M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点订阅节点分享">Clash免费节点 - 4月19日19.7M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-14-clash-node-daily-updates.htm" title="Clash免费节点 - 4月14日19.3M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/SSR节点订阅节点分享">Clash免费节点 - 4月14日19.3M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/SSR节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-25-free-subscribe-node.htm" title="Clash免费节点 - 3月25日19.8M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点订阅节点分享">Clash免费节点 - 3月25日19.8M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-4-free-shadowrocket-node.htm" title="Clash免费节点 - 3月4日20.6M/S|免费SSR节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点订阅节点分享">Clash免费节点 - 3月4日20.6M/S|免费SSR节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-7-node-share-links.htm" title="Clash免费节点 - 3月7日21.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点订阅节点分享">Clash免费节点 - 3月7日21.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-18-free-node-subscribe-links.htm" title="Clash免费节点 - 4月18日18.7M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点订阅节点分享">Clash免费节点 - 4月18日18.7M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-13-node-share-links.htm" title="Clash免费节点 - 4月13日19.6M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点订阅节点分享">Clash免费节点 - 4月13日19.6M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-9-node-share-links.htm" title="Clash免费节点 - 3月9日18.4M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点订阅节点分享">Clash免费节点 - 3月9日18.4M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-15-node-share-links.htm" title="Clash免费节点 - 3月15日20.9M/S|免费Trojan节点/Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享">Clash免费节点 - 3月15日20.9M/S|免费Trojan节点/Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-9-node-share-links.htm" title="Clash免费节点 - 4月9日21.4M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点分享">Clash免费节点 - 4月9日21.4M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-20-clash-node.htm" title="Clash免费节点 - 4月20日20.3M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点/Trojan节点订阅节点分享">Clash免费节点 - 4月20日20.3M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点/Trojan节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-11-clash-node.htm" title="Clash免费节点 - 5月11日21.6M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享">Clash免费节点 - 5月11日21.6M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-25-free-subscribe-node.htm" title="Clash免费节点 - 4月25日19.2M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点订阅节点分享">Clash免费节点 - 4月25日19.2M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-24-free-v2ray.htm" title="Clash免费节点 - 4月24日18.1M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点订阅节点分享">Clash免费节点 - 4月24日18.1M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-6-free-node-subscribe.htm" title="Clash免费节点 - 5月6日23M/S|免费Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点分享">Clash免费节点 - 5月6日23M/S|免费Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-10-node-share-links.htm" title="Clash免费节点 - 5月10日18M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点订阅节点分享">Clash免费节点 - 5月10日18M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-21-free-v2ray.htm" title="Clash免费节点 - 4月21日20.1M/S|免费Shadowrocket节点/SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点订阅节点分享">Clash免费节点 - 4月21日20.1M/S|免费Shadowrocket节点/SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-23-free-high-speed-nodes.htm" title="Clash免费节点 - 4月23日22.1M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Trojan节点订阅节点分享">Clash免费节点 - 4月23日22.1M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Trojan节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-29-free-clash.htm" title="Clash免费节点 - 4月29日21.3M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点分享">Clash免费节点 - 4月29日21.3M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-2-clash-v2ray-ss-ssr.htm" title="Clash免费节点 - 5月2日20.7M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点订阅节点分享">Clash免费节点 - 5月2日20.7M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点订阅节点分享</a></li>
                     </ul>
     </div>
 </div>
@@ -513,10 +513,10 @@ wget https://github.com/MetaCubeX/mihomo/releases/latest/download/clash-meta-lin
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">17</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
